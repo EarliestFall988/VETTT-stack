@@ -1,0 +1,35 @@
+{
+  "name": "stallion",
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsx watch src/main.ts"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src",
+      "./main.ts"
+    ],
+    "exec": "tsc && node ./dist/main.js",
+    "ext": "ts,js,json"
+  },
+  "dependencies": {
+    "@trpc/server": "^10.45.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "superjson": "^2.2.2",
+    "tsx": "^4.19.2",
+    "typescript-eslint": "^8.20.0",
+    "uuid": "^11.0.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.3"
+  }
+}
